@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: local('Aeonik Pro'),
+      url('./assets/fonts/AeonikProTRIAL-Bold.otf') format('otf');
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: local('Aeonik Pro'),
+      url('./assets/fonts/AeonikProTRIAL-Regular.otf') format('otf');
+}
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: local('Aeonik Pro'),
+      url('./assets/fonts/AeonikProTRIAL-Light.otf') format('otf');
+}
+
+body {
+  margin: 0;
+  color: #ffff;
+  font-family: -apple-system, Aeonik Pro, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @apply bg-black
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.input-label{
+  @apply text-[16px] font-[400] mb-[6px] text-text-gray
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #253341;
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px #253341 inset;
+  box-shadow: 0 0 0px 1000px #253341 inset;
+  transition: background-color 5000s ease-in-out 0s;
+  color: white;
+}
+
+.pagination-wrapper{
+  @apply flex items-center justify-between px-6 py-3 bg-[#0f0f0f] border-t-0  border border-accent-gray
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  background: #401E1E !important;
+}
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background: #275533 !important;
+}

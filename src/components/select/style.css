@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.label-class{
+    @apply mb-2 text-[14px] font-medium
+}
+.select-input-wrapper{
+    @apply mt-1 border w-full bg-main-black border-[#2d2d2d] rounded-[12px] h-[64px] relative flex items-center justify-center cursor-pointer flex-col
+}
+.select-input-disable {
+    @apply border-black bg-black pointer-events-none
+}
+.select-container{
+    @apply w-full flex items-center gap-[8px] py-[10px] px-[14px]
+}
+.search-icon-wrapper{
+    @apply w-[25px] h-[25px] flex items-center justify-center
+}
+.without-search-wrapper{
+    @apply w-full flex items-center gap-[8px] py-[10px] px-[14px]
+}
+.left-icon-wrapper{
+    @apply w-[25px] h-[25px] flex items-center justify-center
+}
+.format-option-wrapper{
+    @apply flex flex-row whitespace-nowrap w-fit overflow-ellipsis overflow-hidden gap-[4px]
+}
+.input-body{
+    @apply flex-1 h-full bg-main-black font-[400] outline-none text-[16px]
+}

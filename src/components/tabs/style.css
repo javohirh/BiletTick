@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab-wrapper{
+    @apply h-[56px] rounded-[14px] bg-main-black flex w-fit flex-grow-[1] flex-nowrap
+}
+.tab-item {
+    @apply cursor-pointer h-full py-[18px] px-2 flex items-center justify-center overflow-hidden relative flex-1 select-none min-w-[150px]
+}
+
+.text{
+   @apply z-20;
+}
+
+.underline {
+    @apply bg-[#1d1d1d] h-full absolute bottom-0 left-0 right-0 rounded-[14px] z-10
+}
+
